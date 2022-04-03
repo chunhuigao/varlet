@@ -14579,20 +14579,20 @@ function render$8(_ctx, _cache) {
   return openBlock(), createElementBlock("div", {
     class: normalizeClass(_ctx.classes(_ctx.n()))
   }, [createElementVNode("div", {
-    class: normalizeClass(["var-switch-block", _ctx.disabled || _ctx.formDisabled ? _ctx.classes(_ctx.n("disable")) : null]),
+    class: normalizeClass([_ctx.disabled || _ctx.formDisabled ? _ctx.classes(_ctx.n("disable")) : null, "var-switch-block"]),
     onClick: _cache[0] || (_cache[0] = function() {
       return _ctx.switchActive && _ctx.switchActive(...arguments);
     }),
     style: normalizeStyle(_ctx.styleComputed.switch)
   }, [createElementVNode("div", {
     style: normalizeStyle(_ctx.styleComputed.track),
-    class: normalizeClass([_ctx.classes(_ctx.n("track")), _ctx.modelValue === _ctx.activeValue ? _ctx.classes(_ctx.n("track-active")) : null, _ctx.errorMessage ? _ctx.classes(_ctx.n("track-error")) : null])
+    class: normalizeClass([_ctx.modelValue === _ctx.activeValue ? _ctx.classes(_ctx.n("track-active")) : null, _ctx.errorMessage ? _ctx.classes(_ctx.n("track-error")) : null, _ctx.classes(_ctx.n("track"))])
   }, null, 6), withDirectives((openBlock(), createElementBlock("div", {
     class: normalizeClass(_ctx.classes(_ctx.n("ripple"))),
     style: normalizeStyle(_ctx.styleComputed.ripple)
   }, [createElementVNode("div", {
     style: normalizeStyle(_ctx.styleComputed.handle),
-    class: normalizeClass(["var-elevation--2", _ctx.classes(_ctx.n("handle")), _ctx.modelValue === _ctx.activeValue ? _ctx.classes(_ctx.n("handle-active")) : null, _ctx.errorMessage ? _ctx.classes(_ctx.n("handle-error")) : null])
+    class: normalizeClass([_ctx.modelValue === _ctx.activeValue ? _ctx.classes(_ctx.n("handle-active")) : null, _ctx.errorMessage ? _ctx.classes(_ctx.n("handle-error")) : null, _ctx.classes(_ctx.n("handle")), "var-elevation--2"])
   }, [_ctx.loading ? (openBlock(), createBlock(_component_var_loading, {
     key: 0,
     radius: _ctx.toNumber(_ctx.size) / 2 - 2
